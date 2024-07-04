@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+*,
+*::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+:root {
+  --Primary-Green: hsl(75, 94%, 57%);
+
+  --Neutral-White: hsl(0, 0%, 100%);
+  --Neutral-Grey: hsl(0, 0%, 20%);
+  --Neutral-Dark-Grey: hsl(0, 0%, 12%);
+  --Neutral-Off-Black: hsl(0, 0%, 8%);
+
+  --f-size: 14px;
+
+  --f-weight-regular: 400;
+  --f-weight-semibold: 600;
+  --f-weight-bold: 700;
+
+  --f-family: "Inter", sans-serif;
+}
+
+body {
+  font-size: var(--f-size);
+  font-family: var(--f-family);
+  background-color: var(--Neutral-Off-Black);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Neutral-Off-Black);
+}
+
+.card {
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+  background-color: var(--Neutral-Dark-Grey);
+  margin: 0 20px;
+  overflow: hidden;
+}
+
+.user_avater {
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+}
+.card img {
+  margin: 0 auto;
+  width: 40%;
+  border-radius: 50%;
+}
+
+.user_name {
+  color: var(--Neutral-White);
+  font-weight: var(--f-weight-bold);
+  font-size: 16px;
+}
+
+.user_address {
+  color: var(--Primary-Green);
+  font-weight: var(--f-weight-semibold);
+  margin-bottom: 15px;
+}
+
+.user_bio {
+  text-align: center;
+  color: hsl(0, 0%, 100%, 0.7);
+  font-weight: var(--f-weight-regular);
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.user_bio span {
+  width: 90%;
+}
+
+.card a {
+  width: 100%;
+  padding: 10px;
+  color: var(--Neutral-White);
+  font-weight: var(--f-weight-semibold);
+  text-decoration: none;
+  text-align: center;
+  border-radius: 8px;
+  background-color: var(--Neutral-Grey);
+}
+
+.card a:hover {
+  background-color: var(--Primary-Green);
+  color: var(--Neutral-Dark-Grey);
+}
+
+@media screen and (min-width: 375px) {
+}
+
+@media screen and (min-width: 1440px) {
+}
